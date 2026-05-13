@@ -56,14 +56,16 @@ ul{list-style:none}
    HEADER / NAV
    ════════════════ */
 header{
-  position:sticky;top:0;z-index:200;
+  position:sticky;
+  position:relative;
+top:0;z-index:200;
   background:rgba(244,241,236,.92);
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
   padding:0 1.25rem;
   height:58px;
-  display:flex;align-items:center;justify-content:space-between;
+  display:flex;align-items:center;justify-content:space-between:position:relative;
 }
 .logo{
   font-family:var(--font-head);
@@ -82,9 +84,12 @@ header{
   transition:color .2s;
 }
 .logo-img{
+position:absolute;
+right:1.25rem;
+top:50%;
+transform: translateY(-50%);
 height: 38px;
 width: auto;
-object-fit: contain;
 }
 .nav-links a:hover{color:var(--accent)}
 .nav-order-btn{
