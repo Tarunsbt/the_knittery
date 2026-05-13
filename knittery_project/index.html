@@ -146,6 +146,26 @@ width: auto;
   margin-top:1.5rem;
   animation:fadeUp .55s .22s var(--ease) both;
 }
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.hero-logo-img {
+  height: 48px;
+  width: auto;
+}
+.hero-brand-name {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.hero-brand-name em {
+  color: var(--accent);
+  font-style: normal;
+}
 .btn-primary{
   background:var(--accent);color:#fff;
   border:none;padding:.7rem 1.6rem;
@@ -427,8 +447,8 @@ footer{
 
 <!-- ═══ HEADER ═══ -->
 <header>
-  <div class="logo">The <em>Knittery</em></div>
-  <img src="images/logo.png" alt="Logo" class="logo-img"/>
+  
+
   <nav class="nav-links">
     <a href="#shop">Shop</a>
     <a href="#contact">Contact</a>
@@ -439,6 +459,10 @@ footer{
 <!-- ═══ HERO ═══ -->
 <div class="hero">
   <div class="hero-text">
+    <div class="hero-brand">
+  <img src="images/logo.png" alt="Logo" class="hero-logo-img" />
+  <span class="hero-brand-name">The <em>Knittery</em></span>
+</div>
     <div class="hero-eyebrow">✦ Handmade Crochet</div>
     <h1>Crafted by hand,<br>woven with <i>love.</i></h1>
     <p class="hero-desc">Keychains, amigurumi & floral pieces — every stitch made by hand from Chennai, just for you.</p>
